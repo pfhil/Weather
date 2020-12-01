@@ -19,7 +19,7 @@ namespace WeatherWinFormsUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             var controller = new ApplicationController(new LightInjectAdapder());
-
+          // здесь был Никита Б
             //controller.Run<>();
         }
     }
