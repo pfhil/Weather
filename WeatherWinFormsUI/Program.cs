@@ -4,6 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WeatherPresentation.Common;
+using WeatherPresentation.Views;
+using WeatherDomainModel.Service.Implementation;
+using WeatherDomainModel.Service.Interfaces;
+using WeatherPresentation.Presenters;
 
 namespace WeatherWinFormsUI
 {
@@ -18,9 +22,13 @@ namespace WeatherWinFormsUI
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            var controller = new ApplicationController(new LightInjectAdapder());
+            var controller = new ApplicationController(new LightInjectAdapder())
+                .RegisterView<IMainView, MainForm>()
+                .RegisterView<ICurrentWeatherView, CurrentWeatherForm>()
+                .RegisterService<ICurrentWeatherService, CurrentWeatherService>()
+                .RegisterInstance(new ApplicationContext());
 
-            //controller.Run<>();
+            controller.Run<MainFormPresenter>();
         }
     }
 }
