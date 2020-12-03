@@ -8,5 +8,6 @@ namespace WeatherPresentation.Views
         public string CityName { get; }
         public void SetWeatherInfo(CurrentWeatherInfo weatherInfo);
         event Action GetWeather;
+
     }
 }

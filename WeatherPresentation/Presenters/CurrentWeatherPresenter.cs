@@ -22,15 +22,15 @@ namespace WeatherPresentation.Presenters
         {
 
             _service = service;
-            View.GetWeather += () => OnGetWeather();
+            View.GetWeather += () => OnGetWeatherAsync();
         }
 
-        private void OnGetWeather()
+        private async void OnGetWeatherAsync()
         {
-            var Response = Task.Run(() => _service.GetCurrentWeatherDataByName(View.CityName, HttpClient));
+            CurrentWeatherData Response;
             try
             {
-                Response.Wait();
+                Response = await Task.Run(() => _service.GetCurrentWeatherDataByName(View.CityName, HttpClient));
             }
             catch (HttpRequestException ex)
             {
@@ -39,15 +39,15 @@ namespace WeatherPresentation.Presenters
             }
             var WeatherInfo = new CurrentWeatherInfo()
             {
-                Temp = Response.Result.Main.Temp.ToString(),
-                Description = Response.Result.Weather.FirstOrDefault().Description,
-                Visibility = $"{Response.Result.Visibility} метров",
-                WindSpeed = $"{Response.Result.Wind.Speed} м/с",
-                WindDirection = Response.Result.Wind.Direction.ToString(),
-                CloudsPercent = $"{Response.Result.Clouds.Percent}%",
-                CountryCode = Response.Result.Sys.CountryCode,
-                Sunrise = TimeSpan.FromSeconds(Response.Result.Sys.Sunrise).ToString(@"hh\:mm\:ss"),
-                Sunset = TimeSpan.FromSeconds(Response.Result.Sys.Sunset).ToString(@"hh\:mm\:ss")
+                Temp = Response.Main.Temp.ToString(),
+                Description = Response.Weather.FirstOrDefault().Description,
+                Visibility = $"{Response.Visibility} метров",
+                WindSpeed = $"{Response.Wind.Speed} м/с",
+                WindDirection = Response.Wind.Direction.ToString(),
+                CloudsPercent = $"{Response.Clouds.Percent}%",
+                CountryCode = Response.Sys.CountryCode,
+                Sunrise = TimeSpan.FromSeconds(Response.Sys.Sunrise).ToString(@"hh\:mm\:ss"),
+                Sunset = TimeSpan.FromSeconds(Response.Sys.Sunset).ToString(@"hh\:mm\:ss")
             };
             View.SetWeatherInfo(WeatherInfo);
         }
