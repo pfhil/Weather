@@ -24,10 +24,10 @@ namespace WeatherPresentation.Presenters
 
             _service = service;
             View.GetWeather += () => OnGetWeatherAsync();
-            View.SelectTime += Index => OnSelectTimeAsync(Index);
+            View.SelectTime += Index => OnSelectTime(Index);
         }
 
-        private void OnSelectTimeAsync(int Index)
+        private void OnSelectTime(int Index)
         {
             var weatherInfo = new WeatherInfo()
             {
