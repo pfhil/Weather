@@ -7,17 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WeatherPresentation.Common;
 using WeatherPresentation.Views;
+using WeatherPresentation.Common;
 
 namespace WeatherWinFormsUI
 {
-    public partial class CurrentWeatherForm : Form, ICurrentWeatherView
+    public partial class ForecastWeatherForm : Form, IForecastWeatherView
     {
-        public CurrentWeatherForm()
+        public ForecastWeatherForm()
         {
             InitializeComponent();
         }
+
+        public string TimeOfDataForecasted { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public event Action<int> SelectTime;
 
         public string CityName { get { return txtCityName.Text; } }
 
@@ -50,6 +54,21 @@ namespace WeatherWinFormsUI
         public new void Show()
         {
             ShowDialog();
+        }
+
+        public void AddTimeItem(string TimeItem)
+        {
+            cmbTime.Items.Add(TimeItem);
+        }
+
+        public void ResetTimeList()
+        {
+            cmbTime.Items.Clear();
+        }
+
+        private void cmbTime_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SelectTime?.Invoke(cmbTime.SelectedIndex);
         }
     }
 }

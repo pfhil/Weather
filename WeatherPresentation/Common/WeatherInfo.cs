@@ -1,6 +1,6 @@
 ﻿namespace WeatherPresentation.Common
 {
-    public class CurrentWeatherInfo
+    public class WeatherInfo
     {
         public string Temp { get; init; }
         public string Description { get; init; }

@@ -27,7 +27,7 @@ namespace WeatherWinFormsUI
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        protected void InitializeComponent()
         {
             this.txtCityName = new System.Windows.Forms.TextBox();
             this.lblDescription = new System.Windows.Forms.Label();
@@ -283,27 +283,27 @@ namespace WeatherWinFormsUI
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtCityName;
-        private System.Windows.Forms.Label lblDescription;
-        private System.Windows.Forms.Label lblDescriptionValue;
-        private System.Windows.Forms.Label lblVisibility;
-        private System.Windows.Forms.Label lblVisibilityValue;
-        private System.Windows.Forms.Label lblWindSpeedValue;
-        private System.Windows.Forms.Label lblWindSpeed;
-        private System.Windows.Forms.Label lblSunriseValue;
-        private System.Windows.Forms.Label lblSunrise;
-        private System.Windows.Forms.Label lblSunsetValue;
-        private System.Windows.Forms.Label lblSunset;
-        private System.Windows.Forms.Label lblWindDirectionValue;
-        private System.Windows.Forms.Label lblWindDirection;
-        private System.Windows.Forms.Label lblCloudsPercentValue;
-        private System.Windows.Forms.Label lblCloudsPercent;
-        private System.Windows.Forms.Label lblTempValue;
-        private System.Windows.Forms.Label lblTemp;
-        private System.Windows.Forms.GroupBox grpbxWind;
-        private System.Windows.Forms.Label lblCityName;
-        private System.Windows.Forms.Button btnGetData;
-        private System.Windows.Forms.Label lblCountryCodeValue;
-        private System.Windows.Forms.Label lblCountryCode;
+        protected System.Windows.Forms.TextBox txtCityName;
+        protected System.Windows.Forms.Label lblDescription;
+        protected System.Windows.Forms.Label lblDescriptionValue;
+        protected System.Windows.Forms.Label lblVisibility;
+        protected System.Windows.Forms.Label lblVisibilityValue;
+        protected System.Windows.Forms.Label lblWindSpeedValue;
+        protected System.Windows.Forms.Label lblWindSpeed;
+        protected System.Windows.Forms.Label lblSunriseValue;
+        protected System.Windows.Forms.Label lblSunrise;
+        protected System.Windows.Forms.Label lblSunsetValue;
+        protected System.Windows.Forms.Label lblSunset;
+        protected System.Windows.Forms.Label lblWindDirectionValue;
+        protected System.Windows.Forms.Label lblWindDirection;
+        protected System.Windows.Forms.Label lblCloudsPercentValue;
+        protected System.Windows.Forms.Label lblCloudsPercent;
+        protected System.Windows.Forms.Label lblTempValue;
+        protected System.Windows.Forms.Label lblTemp;
+        protected System.Windows.Forms.GroupBox grpbxWind;
+        protected System.Windows.Forms.Label lblCityName;
+        protected System.Windows.Forms.Button btnGetData;
+        protected System.Windows.Forms.Label lblCountryCodeValue;
+        protected System.Windows.Forms.Label lblCountryCode;
     }
 }

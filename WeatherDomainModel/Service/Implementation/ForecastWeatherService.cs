@@ -14,16 +14,17 @@ using System.Collections.Specialized;
 
 namespace WeatherDomainModel.Service.Implementation
 {
-    public class CurrentWeatherService : BaseService, ICurrentWeatherService
+    public class ForecastWeatherService : BaseService, IForecastWeatherService
     {
-        private string uri = $"http://api.openweathermap.org/data/2.5/weather?&appid={AppId}";
-        public async Task<CurrentWeatherData> GetCurrentWeatherDataByCityName(string CityName, HttpClient httpClient)
+        private string uri = $"http://api.openweathermap.org/data/2.5/forecast?&appid={AppId}";
+
+        public async Task<ForecastWeatherData> GetForecastWeatherDataByCityName(string CityName, HttpClient httpClient)
         {
             var _uri = uri
                 .AddCityName(CityName)
                 .UseUnits("metric")
                 .UseLang("ru");
-            return await GetJsonHttpClient<CurrentWeatherData>(_uri, httpClient);
+            return await GetJsonHttpClient<ForecastWeatherData>(_uri, httpClient);
         }
     }
 }

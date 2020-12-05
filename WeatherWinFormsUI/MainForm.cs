@@ -20,6 +20,7 @@ namespace WeatherWinFormsUI
         }
 
         public event Action OpenCurrentWeather;
+        public event Action OpenForecastWeather;
 
         public void ShowMessage(string message)
         {
@@ -36,6 +37,11 @@ namespace WeatherWinFormsUI
             _context.MainForm = this;
             Application.Run(_context);
             //base.Show();
+        }
+
+        private void btnOpenForecastWeather_Click(object sender, EventArgs e)
+        {
+            OpenForecastWeather?.Invoke();
         }
     }
 }

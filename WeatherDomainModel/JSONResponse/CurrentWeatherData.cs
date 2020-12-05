@@ -14,7 +14,7 @@ namespace WeatherDomainModel.JSONResponse
         public string Base { get; set; }
 
         [JsonProperty(PropertyName = "main")]
-        public Main Main { get; set; }
+        public MainCurrent Main { get; set; }
 
         [JsonProperty(PropertyName = "visibility")]
         public int Visibility { get; set; }
@@ -29,7 +29,10 @@ namespace WeatherDomainModel.JSONResponse
         public int TimeOfDataCalculation { get; set; }
 
         [JsonProperty(PropertyName = "sys")]
-        public Sys Sys { get; set; }
+        public SysCurrent Sys { get; set; }
+
+        [JsonProperty(PropertyName = "timezone")]
+        public int TimeZone { get; set; }
 
         [JsonProperty(PropertyName = "id")]
         public int CityId { get; set; }
@@ -50,7 +53,7 @@ namespace WeatherDomainModel.JSONResponse
         public float Latitude { get; set; }
     }
 
-    public class Main
+    public class MainCurrent
     {
         [JsonProperty(PropertyName = "temp")]
         public float Temp { get; set; }
@@ -66,6 +69,9 @@ namespace WeatherDomainModel.JSONResponse
 
         [JsonProperty(PropertyName = "temp_max")]
         public float TempMax { get; set; }
+
+        [JsonProperty(PropertyName = "feels_like")]
+        public float FeelsLike { get; set; }
     }
 
     public class Wind
@@ -83,16 +89,13 @@ namespace WeatherDomainModel.JSONResponse
         public int Percent { get; set; }
     }
 
-    public class Sys
+    public class SysCurrent
     {
         [JsonProperty(PropertyName = "type")]
         public int Type { get; set; }
 
         [JsonProperty(PropertyName = "id")]
         public int Id { get; set; }
-
-        [JsonProperty(PropertyName = "message")]
-        public float Message { get; set; }
 
         [JsonProperty(PropertyName = "country")]
         public string CountryCode { get; set; }

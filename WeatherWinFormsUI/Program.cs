@@ -25,6 +25,8 @@ namespace WeatherWinFormsUI
             var controller = new ApplicationController(new LightInjectAdapder())
                 .RegisterView<IMainView, MainForm>()
                 .RegisterView<ICurrentWeatherView, CurrentWeatherForm>()
+                .RegisterView<IForecastWeatherView, ForecastWeatherForm>()
+                .RegisterService<IForecastWeatherService, ForecastWeatherService>()
                 .RegisterService<ICurrentWeatherService, CurrentWeatherService>()
                 .RegisterInstance(new ApplicationContext());
 

@@ -30,6 +30,7 @@ namespace WeatherWinFormsUI
         private void InitializeComponent()
         {
             this.btnOpenCurrentWearher = new System.Windows.Forms.Button();
+            this.btnOpenForecastWeather = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOpenCurrentWearher
@@ -42,11 +43,22 @@ namespace WeatherWinFormsUI
             this.btnOpenCurrentWearher.UseVisualStyleBackColor = true;
             this.btnOpenCurrentWearher.Click += new System.EventHandler(this.btnOpenCurrentWearher_Click);
             // 
+            // btnOpenForecastWeather
+            // 
+            this.btnOpenForecastWeather.Location = new System.Drawing.Point(234, 65);
+            this.btnOpenForecastWeather.Name = "btnOpenForecastWeather";
+            this.btnOpenForecastWeather.Size = new System.Drawing.Size(112, 42);
+            this.btnOpenForecastWeather.TabIndex = 1;
+            this.btnOpenForecastWeather.Text = "Прогноз на 5 дней";
+            this.btnOpenForecastWeather.UseVisualStyleBackColor = true;
+            this.btnOpenForecastWeather.Click += new System.EventHandler(this.btnOpenForecastWeather_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 173);
+            this.Controls.Add(this.btnOpenForecastWeather);
             this.Controls.Add(this.btnOpenCurrentWearher);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
@@ -59,5 +71,6 @@ namespace WeatherWinFormsUI
         #endregion
 
         private System.Windows.Forms.Button btnOpenCurrentWearher;
+        private System.Windows.Forms.Button btnOpenForecastWeather;
     }
 }

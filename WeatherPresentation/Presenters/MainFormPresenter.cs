@@ -13,6 +13,7 @@ namespace WeatherPresentation.Presenters
         public MainFormPresenter(IApplicationController controller, IMainView view) : base(controller, view)
         {
             View.OpenCurrentWeather += () => { controller.Run<CurrentWeatherPresenter>(); };
+            View.OpenForecastWeather += () => { controller.Run<ForecastWeatherPresenter>(); };
         }
     }
 }

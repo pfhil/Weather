@@ -8,8 +8,8 @@ using WeatherDomainModel.JSONResponse;
 
 namespace WeatherDomainModel.Service.Interfaces
 {
-    public interface ICurrentWeatherService
+    public interface IForecastWeatherService
     {
-        public Task<CurrentWeatherData> GetCurrentWeatherDataByCityName(string CityName, HttpClient httpClient);
+        public Task<ForecastWeatherData> GetForecastWeatherDataByCityName(string CityName, HttpClient httpClient);
     }
 }

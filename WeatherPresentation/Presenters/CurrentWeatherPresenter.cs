@@ -30,14 +30,14 @@ namespace WeatherPresentation.Presenters
             CurrentWeatherData Response;
             try
             {
-                Response = await Task.Run(() => _service.GetCurrentWeatherDataByName(View.CityName, HttpClient));
+                Response = await Task.Run(() => _service.GetCurrentWeatherDataByCityName(View.CityName, HttpClient));
             }
             catch (HttpRequestException ex)
             {
                 View.ShowMessage(ex.Message);
                 return;
             }
-            var WeatherInfo = new CurrentWeatherInfo()
+            var WeatherInfo = new WeatherInfo()
             {
                 Temp = Response.Main.Temp.ToString(),
                 Description = Response.Weather.FirstOrDefault().Description,

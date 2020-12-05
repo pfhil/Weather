@@ -15,7 +15,6 @@ namespace WeatherDomainModel.Service.Implementation
     {
         protected static string AppId = ConfigurationManager.AppSettings.Get("AppId");
 
-
         protected static async Task<T> GetJsonHttpClient<T>(string uri, HttpClient httpClient)
             where T : class
         {
@@ -62,5 +61,6 @@ namespace WeatherDomainModel.Service.Implementation
 
             return null;
         }
+
     }
 }
