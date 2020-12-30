@@ -18,13 +18,13 @@ namespace WeatherDomainModel.Service.Implementation
     {
         private string uri = $"http://api.openweathermap.org/data/2.5/forecast?&appid={AppId}";
 
-        public async Task<ForecastWeatherData> GetForecastWeatherDataByCityName(string CityName, HttpClient httpClient)
+        public Task<ForecastWeatherData> GetForecastWeatherDataByCityName(string CityName, HttpClient httpClient)
         {
             var _uri = uri
                 .AddCityName(CityName)
                 .UseUnits("metric")
                 .UseLang("ru");
-            return await GetJsonHttpClient<ForecastWeatherData>(_uri, httpClient);
+            return GetJsonHttpClientAsync<ForecastWeatherData>(_uri, httpClient);
         }
     }
 }

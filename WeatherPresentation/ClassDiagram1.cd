@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WeatherPresentation.Common.ApplicationController" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACgAAACAAAAAAAAAAAAAAAY=</HashCode>
+      <FileName>Common\ApplicationController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WeatherPresentation.Common.BasePresener&lt;TView&gt;" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Common\BasePresenter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WeatherPresentation.Common.BasePresener&lt;TView, TArg&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Common\BasePresenter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WeatherPresentation.Common.SingletonHttpClient" Collapsed="true">
+    <Position X="8" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\SingletonHttpClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherPresentation.Common.WeatherInfo" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGAAQAAAIAAgAAAAAAAEAAAAIAAAAAAAAAAEgAAAAAA=</HashCode>
+      <FileName>Common\WeatherInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherPresentation.Presenters.CurrentWeatherPresenter" Collapsed="true">
+    <Position X="3" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAACAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Presenters\CurrentWeatherPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherPresentation.Presenters.ForecastWeatherPresenter" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAQAAAAAAAACAAAAAAAEAAAAAAAgAA=</HashCode>
+      <FileName>Presenters\ForecastWeatherPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherPresentation.Presenters.MainFormPresenter" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Presenters\MainFormPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="WeatherPresentation.Common.IApplicationController" Collapsed="true">
+    <Position X="8" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAACAAAAAAAAAAAAAAAY=</HashCode>
+      <FileName>Common\IApplicationController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeatherPresentation.Common.IContainer" Collapsed="true">
+    <Position X="10" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAgAAAABAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Common\IContainer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeatherPresentation.Common.IPresenter" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Common\IPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeatherPresentation.Common.IPresenter&lt;TArg&gt;" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Common\IPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeatherPresentation.Common.IView" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Common\IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeatherPresentation.Views.ICurrentWeatherView" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAEAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ICurrentWeatherView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeatherPresentation.Views.IForecastWeatherView" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAA=</HashCode>
+      <FileName>Views\IForecastWeatherView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeatherPresentation.Views.IMainView" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Views\IMainView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -47,12 +47,6 @@ namespace WeatherDomainModel.JSONResponse
         public int Sunset { get; set; }
     }
 
-    //public class Coord
-    //{
-    //    public float lat { get; set; }
-    //    public float lon { get; set; }
-    //}
-
     public class List
     {
         [JsonProperty(PropertyName = "dt")]
@@ -116,17 +110,6 @@ namespace WeatherDomainModel.JSONResponse
         public float TempKF { get; set; }
     }
 
-    //public class Clouds
-    //{
-    //    public int all { get; set; }
-    //}
-
-    //public class Wind
-    //{
-    //    public float speed { get; set; }
-    //    public int deg { get; set; }
-    //}
-
     public class Rain
     {
         [JsonProperty(PropertyName = "_3h")]
@@ -138,12 +121,4 @@ namespace WeatherDomainModel.JSONResponse
         [JsonProperty(PropertyName = "pod")]
         public string PartOfTheDay { get; set; }
     }
-
-    //public class Weather
-    //{
-    //    public int id { get; set; }
-    //    public string main { get; set; }
-    //    public string description { get; set; }
-    //    public string icon { get; set; }
-    //}
 }

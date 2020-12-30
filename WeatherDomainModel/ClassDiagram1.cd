@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WeatherDomainModel.JSONResponse.CurrentWeatherData" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAABIEIAAAAAAAAQAAAQAAEAAAAQQAAEBAAAQAA=</HashCode>
+      <FileName>JSONResponse\CurrentWeatherData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherDomainModel.JSONResponse.Coord" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JSONResponse\CurrentWeatherData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherDomainModel.JSONResponse.MainCurrent" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAADAAAAAAAAAABAAAAAggAAAAA=</HashCode>
+      <FileName>JSONResponse\CurrentWeatherData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherDomainModel.JSONResponse.Wind" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JSONResponse\CurrentWeatherData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherDomainModel.JSONResponse.Clouds" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>JSONResponse\CurrentWeatherData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherDomainModel.JSONResponse.SysCurrent" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAEAAAAAAA=</HashCode>
+      <FileName>JSONResponse\CurrentWeatherData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherDomainModel.JSONResponse.Weather" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAABAEAAAA=</HashCode>
+      <FileName>JSONResponse\CurrentWeatherData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherDomainModel.JSONResponse.ForecastWeatherData" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAIAAAAAI=</HashCode>
+      <FileName>JSONResponse\ForecastWeatherData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherDomainModel.JSONResponse.City" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAAAAAAAIgAAAAAQAAAIAAAAAQAAEAAAAAAA=</HashCode>
+      <FileName>JSONResponse\ForecastWeatherData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherDomainModel.JSONResponse.List" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGAAAAAAAEAAAAAAAAAAAAAQAABAAAQQAAAEBAAEAAA=</HashCode>
+      <FileName>JSONResponse\ForecastWeatherData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherDomainModel.JSONResponse.MainForecast" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAQAATAAAAAAAAAABAAAEAggAAAAA=</HashCode>
+      <FileName>JSONResponse\ForecastWeatherData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherDomainModel.JSONResponse.Rain" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>JSONResponse\ForecastWeatherData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherDomainModel.JSONResponse.SysForecast" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JSONResponse\ForecastWeatherData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherDomainModel.Service.Implementation.BaseService" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Service\Implementation\BaseService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherDomainModel.Service.Implementation.CurrentWeatherService" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\Implementation\CurrentWeatherService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WeatherDomainModel.Service.Implementation.ForecastWeatherService" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\Implementation\ForecastWeatherService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WeatherDomainModel.Service.Implementation.StringUriExtension" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAQAAAA=</HashCode>
+      <FileName>Service\Implementation\StringUriExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="WeatherDomainModel.Service.Interfaces.ICurrentWeatherService" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\Interfaces\ICurrentWeatherService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeatherDomainModel.Service.Interfaces.IForecastWeatherService" Collapsed="true">
+    <Position X="7" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\Interfaces\IForecastWeatherService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

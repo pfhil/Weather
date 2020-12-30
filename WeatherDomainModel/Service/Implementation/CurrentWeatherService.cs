@@ -11,19 +11,20 @@ using Newtonsoft.Json;
 using WeatherDomainModel.Service.Interfaces;
 using System.Configuration;
 using System.Collections.Specialized;
+using System.Threading;
 
 namespace WeatherDomainModel.Service.Implementation
 {
     public class CurrentWeatherService : BaseService, ICurrentWeatherService
     {
         private string uri = $"http://api.openweathermap.org/data/2.5/weather?&appid={AppId}";
-        public async Task<CurrentWeatherData> GetCurrentWeatherDataByCityName(string CityName, HttpClient httpClient)
+        public Task<CurrentWeatherData> GetCurrentWeatherDataByCityName(string CityName, HttpClient httpClient)
         {
             var _uri = uri
                 .AddCityName(CityName)
                 .UseUnits("metric")
                 .UseLang("ru");
-            return await GetJsonHttpClient<CurrentWeatherData>(_uri, httpClient);
+            return GetJsonHttpClientAsync<CurrentWeatherData>(_uri, httpClient);
         }
     }
 }

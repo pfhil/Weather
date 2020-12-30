@@ -21,42 +21,6 @@ namespace WeatherPresentation.Common
         {
             View.Show();
         }
-
-        //protected bool ValidationObject<Tobj>(Tobj obj)
-        //{
-        //    var results = new List<ValidationResult>();
-        //    var context = new ValidationContext(obj);
-        //    if (!Validator.TryValidateObject(obj, context, results, true))
-        //    {
-        //        var ErrorResult = "";
-        //        foreach (var error in results)
-        //        {
-        //            ErrorResult += error + "\n";
-        //        }
-        //        View.ShowMessage(ErrorResult);
-        //        return false;
-        //    }
-        //    return true;
-        //}
-
-        //protected bool ValidationProperty<Tprop, Tobj>(Tprop prop, string _MemberName)
-        //    where Tobj : class, new()
-        //{
-        //    var obj = new Tobj();
-        //    var results = new List<ValidationResult>();
-        //    var context = new ValidationContext(obj) { MemberName = _MemberName };
-        //    if (!Validator.TryValidateProperty(prop, context, results))
-        //    {
-        //        var ErrorResult = "";
-        //        foreach (var error in results)
-        //        {
-        //            ErrorResult += error + "\n";
-        //        }
-        //        View.ShowMessage(ErrorResult);
-        //        return false;
-        //    }
-        //    return true;
-        //}
     }
 
     public abstract class BasePresener<TView, TArg> : IPresenter<TArg>
@@ -72,41 +36,5 @@ namespace WeatherPresentation.Common
         }
 
         public abstract void Run(TArg argument);
-
-        //protected bool ValidationObject<Tobj>(Tobj obj)
-        //{
-        //    var results = new List<ValidationResult>();
-        //    var context = new ValidationContext(obj);
-        //    if (!Validator.TryValidateObject(obj, context, results, true))
-        //    {
-        //        var ErrorResult = "";
-        //        foreach (var error in results)
-        //        {
-        //            ErrorResult += error + "\n";
-        //        }
-        //        View.ShowMessage(ErrorResult);
-        //        return false;
-        //    }
-        //    return true;
-        //}
-
-        //protected bool ValidationProperty<Tprop, Tobj>(Tprop prop, string _MemberName)
-        //    where Tobj : class, new()
-        //{
-        //    var obj = new Tobj();
-        //    var results = new List<ValidationResult>();
-        //    var context = new ValidationContext(obj) { MemberName = _MemberName };
-        //    if (!Validator.TryValidateProperty(prop, context, results))
-        //    {
-        //        var ErrorResult = "";
-        //        foreach (var error in results)
-        //        {
-        //            ErrorResult += error + "\n";
-        //        }
-        //        View.ShowMessage(ErrorResult);
-        //        return false;
-        //    }
-        //    return true;
-        //}
     }
 }

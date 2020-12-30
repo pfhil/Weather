@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WeatherWinFormsUI.CurrentWeatherForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAEgAICAAEgsQgACQABgDBQAmA6AAAAAEAAgAAAA=</HashCode>
+      <FileName>CurrentWeatherForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WeatherWinFormsUI.ForecastWeatherForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ADAAAEgAICAAEgsQgACQABwDBQAmA6IAADAEAAgIABA=</HashCode>
+      <FileName>ForecastWeatherForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WeatherWinFormsUI.LightInjectAdapder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAACgAAAABAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>LightInjectAdapder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WeatherWinFormsUI.MainForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAACAADAAAAACAAAACAAIEAAEAAAIEAAIAAAA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WeatherWinFormsUI.Program" Collapsed="true">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

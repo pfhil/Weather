@@ -56,6 +56,11 @@ namespace WeatherPresentation.Presenters
                 View.ShowMessage(ex.Message);
                 return;
             }
+            catch (Exception)
+            {
+                View.ShowMessage("Произошла непредвиденная ошибка.\nПожалуйста свяжитесь с разработчиками.");
+                return;
+            }
 
             foreach (var TimeItem in ForecastWeatherResponse.List)
             {
